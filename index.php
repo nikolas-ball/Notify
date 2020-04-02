@@ -1,9 +1,36 @@
+<?php
+include("includes/config.php");
+
+//session_destroy();
+
+if(isset($_SESSION['userLoggedIn'])) {
+    $userLoggedIn = $_SESSION['userLoggedIn'];
+}
+else {
+    header("Location: register.php");
+}
+
+?>
+
+<!DOCTYPE HTML>
 <html>
 <head>
-<title>Notify || Not Spotify</title>
+    <meta charset="utf-8">
+    <title>Notify || Not Spotify</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-Hello!
+
+    <div id="nowPlayingBarContainer">
+        <div id="nowPlayingBar">
+
+        </div>
+
+    </div>
+
+
+
+
 </body>
 
 </html>
