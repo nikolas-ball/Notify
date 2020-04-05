@@ -2,6 +2,7 @@
 include("includes/config.php");
 include("includes/classes/Artist.php");
 include("includes/classes/Album.php");
+include("includes/classes/Song.php");
 
 
 //session_destroy();
@@ -23,6 +24,7 @@ else {
     <title>Notify || Not Spotify</title>
     <link rel="icon" type="image/png" href="./assets/images/icons/favicon.png">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
 </head>
 <body>
 <!-- Copyright 2020 Nick Ball -->
