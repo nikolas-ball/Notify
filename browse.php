@@ -2,12 +2,16 @@
 include("includes/includedFiles.php");
 ?>
 
-<h1 class="pageHeadingBig">You Might Also Like</h1>
+<h1 class="pageHeadingBig">Displaying All Music</h1>
 
 <div class="gridViewContainer">
     <?php
-        $albumQuery = mysqli_query($con, "SELECT * FROM albums ORDER BY RAND() LIMIT 8");
-
+        $albumQuery = mysqli_query($con, "SELECT * FROM albums ORDER BY title");
+        // debug assist code  
+        // if (!$check1_res) {
+        //     printf("Error: %s\n", mysqli_error($con));
+        //     exit();
+        // }
         while($row = mysqli_fetch_array($albumQuery)) {
             echo "<div class='gridViewItem'>
                   <span role='link' tabindex='0' onclick='openPage(\"album.php?id=" . $row['id'] . "\")'>
