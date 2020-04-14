@@ -224,7 +224,8 @@ body {
 
 .gridViewItem {
     display: inline-block;
-    margin-right: 20px;
+    /* margin-right: 30px; */
+    margin: 30px;
     width: 29%;
     max-width: 200px;
     min-width: 150px;
@@ -232,6 +233,14 @@ body {
     /* potentially change padding below========================= */
     padding: 30px;
 }
+
+/* ============================================================= */
+/* potentially change again  */
+/* @media screen and (min-width: 1675px) {
+    .gridViewItem {
+        margin: 30px;
+    }
+} */
 
 .gridViewItem img {
     width: 100%;

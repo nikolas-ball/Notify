@@ -1,4 +1,10 @@
 <div id="navBarContainer">
+                <!-- potentially change if needed -->
+                <script>
+                    $("#navBarContainer").on("mousedown touchstart mousemove touchmove", function(e) {
+                        e.preventDefault();
+                    });
+                </script>
                 <nav class="navBar">
                     <span role="link" tabindex="0" onclick="openPage('index.php')" class="logo">
                         <img src="assets/images/icons/notifySmaller.svg" alt="Logo" title="Home">
