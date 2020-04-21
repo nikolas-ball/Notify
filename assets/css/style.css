@@ -415,3 +415,27 @@ body {
     cursor: pointer;
     /* cursor: alias; */
 }
+
+.searchContainer {
+    background-color: #242424;
+    padding: 20px 28px;
+}
+
+.searchContainer h4 {
+    margin: 0;
+    font-weight: 300px;
+}
+
+.searchContainer .searchInput {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing: 2px;
+}
+
+input:focus {
+    outline: none;
+}
