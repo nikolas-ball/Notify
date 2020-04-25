@@ -108,6 +108,15 @@ function setMute() {
     audioElement.audio.muted = !audioElement.audio.muted;
     var imageName = audioElement.audio.muted ? "volume-mute.png" : "volume.png";
     $(".controlButton.volume img").attr("src", "assets/images/icons/" + imageName);
+
+    // hide volume bar on mute
+    var isVisible = audioElement.audio.muted;
+ 
+    if (isVisible == true) {
+        $(".volumeBar .progress").css("visibility","hidden");
+    } else {
+        $(".volumeBar .progress").css("visibility","visible");
+    }
 }
 
 function setShuffle() {
