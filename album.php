@@ -20,7 +20,8 @@ $artistId = $artist->getId();
 
     <div class="rightSection">
         <h2><?php echo $album->getTitle(); ?></h2>
-        <p role="link" tabindex="0" onclick="openPage('artist.php?id=$artistId')">Album By: <strong><?php echo $artist->getName(); ?></strong></p>
+        <!-- ================================VVVVVVVVVVVVVVVVVVV completely self-determined solution to fatal function error VVVVV ===== -->
+        <p role="link" tabindex="0" onclick="openPage('artist.php?id=<?php echo $artistId; ?>')">Album By: <strong><?php echo $artist->getName(); ?></strong></p>
         <p><?php echo $album->getNumberOfSongs(); ?> songs</p>
     </div>
 
@@ -74,5 +75,5 @@ $artistId = $artist->getId();
 
 <nav class="optionsMenu">
         <input type="hidden" class="songId">
-        <div class="item">Add to playlist</div>
+        <?php echo Playlist::getPlaylistDropdown($con, $userLoggedIn); ?>
 </nav>

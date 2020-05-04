@@ -50,7 +50,7 @@ function createPlaylist() {
                 alert(error);
                 return;
             }
-            // do something ehrn ajax returns
+            // do something when ajax returns
             openPage("yourMusic.php");
         });
     }
