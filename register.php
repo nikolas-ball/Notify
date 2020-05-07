@@ -22,7 +22,7 @@
     <meta charset="utf-8">
     <title>Welcome To Notify!</title>
     <link rel="stylesheet" type="text/css" href="assets/css/register.css">
-
+    <link rel="icon" type="image/png" href="./assets/images/icons/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/register.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
